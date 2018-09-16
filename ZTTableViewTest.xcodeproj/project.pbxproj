@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		620BBCF2211940BA00CEE6A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620BBCF1211940BA00CEE6A9 /* AppDelegate.swift */; };
-		620BBCF4211940BA00CEE6A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620BBCF3211940BA00CEE6A9 /* ViewController.swift */; };
 		620BBCF7211940BA00CEE6A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 620BBCF5211940BA00CEE6A9 /* Main.storyboard */; };
 		620BBCF9211940BD00CEE6A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 620BBCF8211940BD00CEE6A9 /* Assets.xcassets */; };
 		620BBCFC211940BD00CEE6A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 620BBCFA211940BD00CEE6A9 /* LaunchScreen.storyboard */; };
 		620BBD07211940BD00CEE6A9 /* ZTTableViewTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620BBD06211940BD00CEE6A9 /* ZTTableViewTestTests.swift */; };
+		620BBD122119410400CEE6A9 /* ZTTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620BBD112119410400CEE6A9 /* ZTTableViewController.swift */; };
+		620BBD142119427200CEE6A9 /* ZTTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620BBD132119427200CEE6A9 /* ZTTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +29,6 @@
 /* Begin PBXFileReference section */
 		620BBCEE211940BA00CEE6A9 /* ZTTableViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZTTableViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		620BBCF1211940BA00CEE6A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		620BBCF3211940BA00CEE6A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		620BBCF6211940BA00CEE6A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		620BBCF8211940BD00CEE6A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		620BBCFB211940BD00CEE6A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +36,8 @@
 		620BBD02211940BD00CEE6A9 /* ZTTableViewTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZTTableViewTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		620BBD06211940BD00CEE6A9 /* ZTTableViewTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTTableViewTestTests.swift; sourceTree = "<group>"; };
 		620BBD08211940BD00CEE6A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		620BBD112119410400CEE6A9 /* ZTTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTTableViewController.swift; sourceTree = "<group>"; };
+		620BBD132119427200CEE6A9 /* ZTTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +80,12 @@
 			isa = PBXGroup;
 			children = (
 				620BBCF1211940BA00CEE6A9 /* AppDelegate.swift */,
-				620BBCF3211940BA00CEE6A9 /* ViewController.swift */,
 				620BBCF5211940BA00CEE6A9 /* Main.storyboard */,
 				620BBCF8211940BD00CEE6A9 /* Assets.xcassets */,
 				620BBCFA211940BD00CEE6A9 /* LaunchScreen.storyboard */,
 				620BBCFD211940BD00CEE6A9 /* Info.plist */,
+				620BBD112119410400CEE6A9 /* ZTTableViewController.swift */,
+				620BBD132119427200CEE6A9 /* ZTTableView.swift */,
 			);
 			path = ZTTableViewTest;
 			sourceTree = "<group>";
@@ -197,8 +200,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				620BBCF4211940BA00CEE6A9 /* ViewController.swift in Sources */,
 				620BBCF2211940BA00CEE6A9 /* AppDelegate.swift in Sources */,
+				620BBD142119427200CEE6A9 /* ZTTableView.swift in Sources */,
+				620BBD122119410400CEE6A9 /* ZTTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +365,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7FF27GA5AU;
 				INFOPLIST_FILE = ZTTableViewTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -379,6 +384,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7FF27GA5AU;
 				INFOPLIST_FILE = ZTTableViewTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
